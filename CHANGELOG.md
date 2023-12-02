@@ -1,5 +1,23 @@
 # @ctx-core/arch--vps
 
+## 0.2.0
+
+### Minor Changes
+
+- lib:
+
+      + app_name$_
+      + app_name_
+      + app_name__set
+      + dotenv$_
+      + dotenv_
+      + dotenv__set
+      + dotenv__scp
+
+### Patch Changes
+
+- fix: export \*.js files
+
 ## 0.1.1
 
 ### Patch Changes
