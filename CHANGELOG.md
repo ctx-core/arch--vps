@@ -1,5 +1,16 @@
 # @ctx-core/arch--vps
 
+## 0.1.1
+
+### Patch Changes
+
+- fix: scp files:
+
+      bashrc__scp
+      sshd_config__scp
+
+  - ./fs
+
 ## 0.1.0
 
 ### Minor Changes
