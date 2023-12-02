@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.2.1
+
+### Patch Changes
+
+- dotenv\_\_scp: fix: export type
+
 ## 0.2.0
 
 ### Minor Changes
