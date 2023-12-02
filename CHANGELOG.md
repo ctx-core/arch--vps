@@ -1,0 +1,46 @@
+# @ctx-core/arch--vps
+
+## 0.1.0
+
+### Minor Changes
+
+- initial version:
+
+      + base_devel__install
+      + bashrc__scp
+      + direnv__install
+      + docker__install
+      + git__install
+      + git_lfs__install
+      + github__public_key__add
+      + github__public_key$_
+      + github__public_key_
+      + github__public_key__set
+      + github__public_key__insert
+      + inetutils__install
+      + lsof__install
+      + nvm__install
+      + pacman__rm_lck
+      + run_id$_
+      + run_id_
+      + run_id__set
+      + ssh_host$_
+      + ssh_host_
+      + ssh_host__set
+      + ssh_key__scp
+      + ssh_keygen__comment$_
+      + ssh_keygen__comment_
+      + ssh_keygen__comment__set
+      + ssh_url$_
+      + ssh_url_
+      + ssh_user$_
+      + ssh_user_
+      + ssh_user__set
+      + sshd_config__scp
+      + tig__install
+      + vim__install
+      + wget__install
+      + which__install
+      + work__mkdir
+      + yay__install
+      + yay__update

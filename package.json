@@ -1,0 +1,87 @@
+{
+	"name": "@ctx-core/arch--vps",
+	"version": "0.1.0",
+	"description": " arch linux based vps configuration & deployment functions",
+	"keywords": [
+		"ctx-core",
+		"arch",
+		"arch linux",
+		"vps",
+		"virtual private server"
+	],
+	"homepage": "https://github.com/ctx-core/arch--vps#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/arch--vps/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/arch--vps.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"type": "module",
+	"files": [
+		"*.d.ts",
+		"*.js",
+		"*.json",
+		"./base_devel__install",
+		"./bashrc__scp",
+		"./direnv__install",
+		"./docker__install",
+		"./github__public_key",
+		"./git__install",
+		"./git_lfs__install",
+		"./inetutils__install",
+		"./lsof__install",
+		"./nvm__install",
+		"./pacman__rm_lck",
+		"./run_id",
+		"./sshd_config__scp",
+		"./ssh_host",
+		"./ssh_keygen__comment",
+		"./ssh_key__scp",
+		"./ssh_url",
+		"./ssh_user",
+		"./tig__install",
+		"./vim__install",
+		"./wget__install",
+		"./which__install",
+		"./work__mkdir",
+		"./yay__install",
+		"./yay__update"
+	],
+	"types": "./index.d.ts",
+	"exports": {
+		".": "./index.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"build": ":",
+		"clean": ":",
+		"exec": "$@",
+		"prepublishOnly": "pnpm clean && pnpm build && pnpm test",
+		"test": "pnpm test-unit && check-dts",
+		"test-unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+		"test-unit-coverage": "c8 pnpm test-unit"
+	},
+	"dependencies": {
+		"@ctx-core/fs": "^1.3.8",
+		"@ctx-core/tempfile": "^1.1.33",
+		"ctx-core": "^4.8.1",
+		"import-meta-resolve": "^4.0.0",
+		"zx": "^7.2.3"
+	},
+	"devDependencies": {
+		"@types/node": "20.10.1",
+		"c8": "^8.0.1",
+		"check-dts": "^0.7.2",
+		"tsx": "^4.6.2",
+		"typescript": "next",
+		"uvu": "^0.5.6"
+	},
+	"publishConfig": {
+		"access": "public",
+		"cache": "~/.npm"
+	},
+	"sideEffects": false
+}
