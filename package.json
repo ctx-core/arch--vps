@@ -1,7 +1,7 @@
 {
 	"name": "@ctx-core/arch--vps",
-	"version": "0.3.5",
-	"description": " arch linux based vps configuration & deployment functions",
+	"version": "0.3.6",
+	"description": "arch linux based vps configuration & deployment functions",
 	"keywords": [
 		"ctx-core",
 		"arch",
@@ -51,8 +51,7 @@
 		"./wget",
 		"./which",
 		"./work",
-		"./yay",
-		"./yay__update"
+		"./yay"
 	],
 	"types": "./index.d.ts",
 	"exports": {

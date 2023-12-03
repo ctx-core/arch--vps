@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.3.6
+
+### Patch Changes
+
+- fix: export
+
 ## 0.3.5
 
 ### Patch Changes
