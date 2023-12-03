@@ -1,5 +1,19 @@
 # @ctx-core/arch--vps
 
+## 0.6.5
+
+### Patch Changes
+
+- ∋ file_exists\_\_waitfor(tempfile_path):
+
+      bashrc__upload
+      dotenv__upload
+      sshd_config__upload
+      ∋ @ctx-core/fs
+
+- Updated dependencies
+  - @ctx-core/fs@1.4.0
+
 ## 0.6.4
 
 ### Patch Changes

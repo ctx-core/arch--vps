@@ -1,3 +1,4 @@
+import { file_exists__waitfor } from '@ctx-core/fs'
 import { tempfile_path_ } from '@ctx-core/tempfile'
 import { be_ } from 'ctx-core/be'
 import { run } from 'ctx-core/function'
@@ -18,9 +19,10 @@ export const sshd_config__upload = be_(ctx=>run(async ()=>{
 		sshd_config__content_(ctx)
 		?? await readFile(`${dir}/../fs/etc/ssh/sshd_config`).then(buf=>buf.toString())
 	if (typeof sshd_config__content === 'string') {
-		const tempfile = await tempfile_path_()
-		await writeFile(tempfile, sshd_config__content)
+		const tempfile_path = await tempfile_path_()
+		await writeFile(tempfile_path, sshd_config__content)
+		await file_exists__waitfor(tempfile_path)
 		// language=sh
-		await ssh(ssh_url_(ctx))`scp ${tempfile} ${ssh_url_(ctx)}:~/sshd_config`
+		await ssh(ssh_url_(ctx))`scp ${tempfile_path} ${ssh_url_(ctx)}:~/sshd_config`
 	}
 }))
