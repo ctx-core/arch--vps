@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.3.5
+
+### Patch Changes
+
+- console.log in all command functions
+
 ## 0.3.4
 
 ### Patch Changes
