@@ -5,8 +5,9 @@ import { run } from 'ctx-core/function'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
 import { readFile, unlink, writeFile } from 'fs/promises'
 import { dirname } from 'path'
-import { ssh } from 'zx'
+import { $ } from 'zx'
 import { ssh_url_ } from '../ssh_url/index.js'
+import { ssh_user_ } from '../ssh_user/index.js'
 export const [
 	bashrc__content$_,
 	bashrc__content_,
@@ -24,7 +25,7 @@ export const bashrc__upload = be_(ctx=>run(async ()=>{
 		await file_exists__waitfor(tempfile_path)
 		try {
 			// language=sh
-			await ssh(ssh_url_(ctx))`scp ${tempfile_path} ${ssh_url_(ctx)}:~/sshd_config`
+			await $`scp ${tempfile_path} ${ssh_url_(ctx)}:/home/${ssh_user_(ctx)}/.bashrc`
 		} finally {
 			await unlink(tempfile_path)
 		}

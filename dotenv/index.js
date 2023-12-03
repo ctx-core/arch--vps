@@ -4,7 +4,8 @@ import { be_ } from 'ctx-core/be'
 import { run } from 'ctx-core/function'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
 import { unlink, writeFile } from 'fs/promises'
-import { ssh } from 'zx'
+import { $ } from 'zx'
+import { app_name_ } from '../app_name/index.js'
 import { ssh_url_ } from '../ssh_url/index.js'
 export const [
 	dotenv$_,
@@ -25,7 +26,7 @@ export const dotenv__upload = be_(ctx=>run(async ()=>{
 	await file_exists__waitfor(tempfile_path)
 	try {
 		// language=sh
-		await ssh(ssh_url_(ctx))`scp ${tempfile_path} ${ssh_url_(ctx)}:~/sshd_config`
+		await $`scp ${tempfile_path} ${ssh_url_(ctx)}:/home/${ssh_url_(ctx)}/work/${app_name_(ctx)}/.env`
 	} finally {
 		await unlink(tempfile_path)
 	}
