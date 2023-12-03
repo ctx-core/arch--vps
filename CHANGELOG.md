@@ -1,5 +1,24 @@
 # @ctx-core/arch--vps
 
+## 0.11.0
+
+### Minor Changes
+
+- minor:
+
+      + acme__email$_
+      + acme__email_
+      + acme__email__set
+      + traefik_yml$_
+      + traefik_yml_
+      + traefik_yml__set
+      + traefik__install
+
+### Patch Changes
+
+- Updated dependencies
+  - ctx-core@4.9.0
+
 ## 0.10.3
 
 ### Patch Changes
