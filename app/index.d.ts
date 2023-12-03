@@ -1,3 +1,4 @@
+import type { Be } from 'ctx-core/be'
 import type { be_memo_pair_T, be_sig_triple_T } from 'ctx-core/rmemo'
 export declare const [
 	app_name$_,
@@ -8,3 +9,4 @@ export declare const [
 	app_path$_,
 	app_path_,
 ]:be_memo_pair_T<string>
+export declare const app__direnv_allow:Be<Promise<void>>

@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.9.0
+
+### Minor Changes
+
+- - app\_\_direnv_allow
+
 ## 0.8.0
 
 ### Minor Changes
