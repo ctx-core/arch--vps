@@ -1,5 +1,15 @@
 # @ctx-core/arch--vps
 
+## 0.6.7
+
+### Patch Changes
+
+- unlink tempfiles after scp:
+
+      bashrc__upload
+      dotenv__upload
+      sshd_config__upload
+
 ## 0.6.6
 
 ### Patch Changes
