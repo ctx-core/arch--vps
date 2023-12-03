@@ -1,5 +1,28 @@
 # @ctx-core/arch--vps
 
+## 0.5.0
+
+### Minor Changes
+
+- lib:
+
+      + bashrc__content$_
+      + bashrc__content_
+      + bashrc__content__set
+      + sshd_config__content$_
+      + sshd_config__content_
+      + sshd_config__content__set
+
+- bashrc**scp→bashrc**upload:
+
+      upload bashrc__content_(ctx) or default bashrc file in this package
+      if bashrc__content__set(ctx, false), then this operation is skipped
+
+- sshd_config**scp→sshd_config**upload:
+
+      upload sshd_config__content_(ctx) or default sshd_config file in this package
+      if sshd_config__content__set(ctx, false), then this operation is skipped
+
 ## 0.4.0
 
 ### Minor Changes

@@ -13,9 +13,9 @@ export const yay__install = be_(ctx=>run(async ()=>{
 		cd ~/work
 		if [ ! -d yay ]; then
 			git clone https://aur.archlinux.org/yay.git
+			cd yay
+			makepkg -si --noconfirm
 		fi
-		cd yay
-		makepkg -si --noconfirm
 	`
 }))
 export const yay__update = be_(ctx=>run(async ()=>{
