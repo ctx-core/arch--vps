@@ -1,5 +1,13 @@
 # @ctx-core/arch--vps
 
+## 0.6.6
+
+### Patch Changes
+
+- @ctx-core/fs: ^1.4.0 -> ^1.4.1
+- Updated dependencies
+  - @ctx-core/fs@1.4.2
+
 ## 0.6.5
 
 ### Patch Changes
