@@ -7,6 +7,7 @@ import { unlink, writeFile } from 'fs/promises'
 import { $ } from 'zx'
 import { app_name_ } from '../app_name/index.js'
 import { ssh_url_ } from '../ssh_url/index.js'
+import { ssh_user_ } from '../ssh_user/index.js'
 export const [
 	dotenv$_,
 	dotenv_,
@@ -26,7 +27,7 @@ export const dotenv__upload = be_(ctx=>run(async ()=>{
 	await file_exists__waitfor(tempfile_path)
 	try {
 		// language=sh
-		await $`scp ${tempfile_path} ${ssh_url_(ctx)}:/home/${ssh_url_(ctx)}/work/${app_name_(ctx)}/.env`
+		await $`scp ${tempfile_path} ${ssh_url_(ctx)}:/home/${ssh_user_(ctx)}/work/${app_name_(ctx)}/.env`
 	} finally {
 		await unlink(tempfile_path)
 	}

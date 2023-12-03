@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.6.9
+
+### Patch Changes
+
+- dotenv\_\_upload: fix: implementation
+
 ## 0.6.8
 
 ### Patch Changes
