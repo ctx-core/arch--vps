@@ -1,5 +1,16 @@
 # @ctx-core/arch--vps
 
+## 0.8.0
+
+### Minor Changes
+
+- changes:
+
+      + app_path$_
+      + app_path_
+      + work_path$_
+      + work_path_
+
 ## 0.7.0
 
 ### Minor Changes

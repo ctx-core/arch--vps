@@ -1,4 +1,4 @@
-export * from './app_name/index.js'
+export * from './app/index.js'
 export * from './base_devel/index.js'
 export * from './bashrc/index.js'
 export * from './direnv/index.js'

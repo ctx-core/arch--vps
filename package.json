@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/arch-vps",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"description": "arch linux based vps configuration & deployment functions",
 	"keywords": [
 		"ctx-core",
@@ -24,7 +24,7 @@
 		"*.d.ts",
 		"*.js",
 		"*.json",
-		"./app_name",
+		"./app",
 		"./base_devel",
 		"./bashrc",
 		"./direnv",
