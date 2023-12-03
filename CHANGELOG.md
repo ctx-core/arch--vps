@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.4.0
+
+### Minor Changes
+
+- package name: @ctx-core/arch-vps
+
 ## 0.3.6
 
 ### Patch Changes

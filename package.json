@@ -1,6 +1,6 @@
 {
-	"name": "@ctx-core/arch--vps",
-	"version": "0.3.6",
+	"name": "@ctx-core/arch-vps",
+	"version": "0.4.0",
 	"description": "arch linux based vps configuration & deployment functions",
 	"keywords": [
 		"ctx-core",
@@ -9,13 +9,13 @@
 		"vps",
 		"virtual private server"
 	],
-	"homepage": "https://github.com/ctx-core/arch--vps#readme",
+	"homepage": "https://github.com/ctx-core/arch-vps#readme",
 	"bugs": {
-		"url": "https://github.com/ctx-core/arch--vps/issues"
+		"url": "https://github.com/ctx-core/arch-vps/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ctx-core/arch--vps.git"
+		"url": "https://github.com/ctx-core/arch-vps.git"
 	},
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
