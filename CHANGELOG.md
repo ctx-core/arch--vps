@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.10.1
+
+### Patch Changes
+
+- bun\_\_install: fix: implementation
+
 ## 0.10.0
 
 ### Minor Changes

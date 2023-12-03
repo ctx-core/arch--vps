@@ -10,10 +10,16 @@ export const [
 ] = be_sig_triple_(()=>null)
 export const bun__install = be_(ctx=>run(async ()=>{
 	console.log('bun__install')
-	// language=sh
-	await ssh(ssh_url_(ctx))`curl -fsSl https://bun.sh/install | bash${
+	console.debug(`curl -fsSl https://bun.sh/install | bash${
 		bun__version_(ctx) == null
 			? ''
 			: ` -s "${bun__version_(ctx)}"`
-	}`
+	}`)
+	if (bun__version_(ctx) == null) {
+		// language=sh
+		ssh(ssh_url_(ctx))`curl -fsSl https://bun.sh/install | bash`
+	} else {
+		// language=sh
+		ssh(ssh_url_(ctx))`curl -fsSl https://bun.sh/install | bash -s "${bun__version_(ctx)}"`
+	}
 }))
