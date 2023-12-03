@@ -4,6 +4,7 @@ import { ssh } from 'zx'
 import { ssh_url_ } from '../ssh_url/index.js'
 export const docker__install = be_(ctx=>run(async ()=>{
 	console.log('docker__install')
+	// See https://docs.docker.com/engine/install/linux-postinstall/
 	// If Docker fails to start, a reboot may be needed
 	// See https://stackoverflow.com/questions/72117335/docker-installation-issue-failed-to-mount-overlay-no-such-device-storage-driv
 	// language=sh
