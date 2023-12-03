@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.3.2
+
+### Patch Changes
+
+- version bump
+
 ## 0.3.1
 
 ### Patch Changes
