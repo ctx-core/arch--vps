@@ -1,6 +1,7 @@
 export * from './app/index.js'
 export * from './base_devel/index.js'
 export * from './bashrc/index.js'
+export * from './bun/index.js'
 export * from './direnv/index.js'
 export * from './docker/index.js'
 export * from './dotenv/index.js'

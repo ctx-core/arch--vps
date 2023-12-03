@@ -1,5 +1,16 @@
 # @ctx-core/arch--vps
 
+## 0.10.0
+
+### Minor Changes
+
+- changes:
+
+      + bun__version$_
+      + bun__version_
+      + bun__version__set
+      + bun__install
+
 ## 0.9.0
 
 ### Minor Changes

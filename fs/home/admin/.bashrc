@@ -13,6 +13,12 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+export BUN_HOME="/home/admin/.bun/bin"
+case ":$PATH:" in
+  *":$BUN_HOME:"*) ;;
+  *) export PATH="$BUN_HOME:$PATH" ;;
+esac
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 

@@ -1,5 +1,5 @@
 import type { Be } from 'ctx-core/be'
-import { be_sig_triple_T } from 'ctx-core/rmemo'
+import type { be_sig_triple_T } from 'ctx-core/rmemo'
 export declare const [
 	ssh_key__name$_,
 	ssh_key__name_,
