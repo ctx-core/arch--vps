@@ -1,5 +1,24 @@
 # @ctx-core/arch--vps
 
+## 0.3.0
+
+### Minor Changes
+
+- lib:
+
+      + openssh__install
+      + ssh_key__name$_
+      + ssh_key__name_
+      + ssh_key__name__set
+      + ssh_key__passphrase$_
+      + ssh_key__passphrase_
+      + ssh_key__passphrase__set
+      + ssh_key__type$_
+      + ssh_key__type_
+      + ssh_key__type__set
+
+- ssh_key**scp→ssh_key**generate: generates the ssh key on the vps over ssh
+
 ## 0.2.2
 
 ### Patch Changes
