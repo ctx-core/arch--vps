@@ -2,20 +2,13 @@ import { file_exists__waitfor } from '@ctx-core/fs'
 import { tempfile_path_ } from '@ctx-core/tempfile'
 import { be_ } from 'ctx-core/be'
 import { run } from 'ctx-core/function'
-import { be_memosig_triple_ } from 'ctx-core/rmemo'
+import { be_memo_pair_, be_memosig_triple_ } from 'ctx-core/rmemo'
 import { unlink, writeFile } from 'fs/promises'
 import { $, ssh } from 'zx'
 import { acme__email_ } from '../acme/index.js'
 import { ssh_url_ } from '../ssh_url/index.js'
-export const [
-	traefik_yml$_,
-	traefik_yml_,
-	traefik_yml__set,
-] = be_memosig_triple_((ctx, traefik_yml$)=>{
-	let val = traefik_yml$.val
-	if (!('val' in traefik_yml$) || traefik_yml$.generated) {
-		// language=yaml
-		val = `
+const [, traefik_yml_pair_] = be_memo_pair_((ctx, traefik_yml_a$)=>[
+	`
 api:
   insecure: false
 
@@ -54,8 +47,17 @@ certificatesResolvers:
       storage: /letsencrypt/acme.json
       httpChallenge:
         entryPoint: http
-		`
-		val.generated = 1
+		`.trim(),
+	traefik_yml_a$.val?.[0]
+])
+export const [
+	traefik_yml$_,
+	traefik_yml_,
+	traefik_yml__set,
+] = be_memosig_triple_((ctx, traefik_yml$)=>{
+	let val = traefik_yml$.val
+	if (!('val' in traefik_yml$) || traefik_yml_pair_(ctx)[1] === val) {
+		val = traefik_yml_pair_(ctx)[0]
 	}
 	return val
 })

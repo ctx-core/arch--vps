@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.11.3
+
+### Patch Changes
+
+- traefik_yml: strict mode: fix: TypeError: Attempted to assign to readonly property.
+
 ## 0.11.2
 
 ### Patch Changes
