@@ -1,5 +1,19 @@
 # @ctx-core/arch--vps
 
+## 0.7.0
+
+### Minor Changes
+
+- changes:
+
+      + github__repo$_
+      + github__repo_
+      + github__repo__set
+      + github__clone_strategy$_
+      + github__clone_strategy_
+      + github__clone_strategy__set
+      + github__repo__refresh
+
 ## 0.6.9
 
 ### Patch Changes
