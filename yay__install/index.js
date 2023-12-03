@@ -9,11 +9,11 @@ export const yay__install = be_(ctx=>run(async ()=>{
 	await work__mkdir(ctx)
 	// language=sh
 	await ssh(ssh_url_(ctx))`
-			cd ~/work
-			if [ ! -d yay ]; then
-				git clone https://aur.archlinux.org/yay.git
-			fi
-			cd yay
-			makepkg -si --noconfirm
-		`
+		cd ~/work
+		if [ ! -d yay ]; then
+			git clone https://aur.archlinux.org/yay.git
+		fi
+		cd yay
+		makepkg -si --noconfirm
+	`
 }))

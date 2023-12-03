@@ -7,13 +7,13 @@ export const docker__install = be_(ctx=>run(async ()=>{
 	// See https://stackoverflow.com/questions/72117335/docker-installation-issue-failed-to-mount-overlay-no-such-device-storage-driv
 	// language=sh
 	await ssh(ssh_url_(ctx))`
-			sudo pacman -S docker docker-compose docker-buildx --noconfirm
-			sudo groupadd -f docker
-			sudo mkdir -p /etc/docker
-			sudo groupadd docker
-			sudo usermod -aG docker $USER
-			newgrp docker
-			sudo systemctl enable docker
-			sudo systemctl start docker.service
-		`
+		sudo pacman -S docker docker-compose docker-buildx --noconfirm
+		sudo groupadd -f docker
+		sudo mkdir -p /etc/docker
+		sudo groupadd docker
+		sudo usermod -aG docker $USER
+		newgrp docker
+		sudo systemctl enable docker
+		sudo systemctl start docker.service
+	`
 }))
