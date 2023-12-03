@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.6.1
+
+### Patch Changes
+
+- dotenv\_\_upload: write to .env with over ssh using the cat command
+
 ## 0.6.0
 
 ### Minor Changes
