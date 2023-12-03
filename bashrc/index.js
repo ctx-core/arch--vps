@@ -1,4 +1,4 @@
-import { tempfile_ } from '@ctx-core/tempfile'
+import { tempfile_path_ } from '@ctx-core/tempfile'
 import { be_ } from 'ctx-core/be'
 import { run } from 'ctx-core/function'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
@@ -18,7 +18,7 @@ export const bashrc__upload = be_(ctx=>run(async ()=>{
 		bashrc__content_(ctx)
 		?? await readFile(`${dir}/../fs/home/admin/.bashrc`).then(buf=>buf.toString())
 	if (typeof bashrc__content === 'string') {
-		const tempfile = await tempfile_()
+		const tempfile = await tempfile_path_()
 		await writeFile(tempfile, bashrc__content)
 		// language=sh
 		await ssh(ssh_url_(ctx))`scp ${tempfile} ${ssh_url_(ctx)}:~/sshd_config`

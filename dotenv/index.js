@@ -1,4 +1,4 @@
-import { tempfile_ } from '@ctx-core/tempfile'
+import { tempfile_path_ } from '@ctx-core/tempfile'
 import { be_ } from 'ctx-core/be'
 import { run } from 'ctx-core/function'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
@@ -19,7 +19,7 @@ export const dotenv__upload = be_(ctx=>run(async ()=>{
 		dotenv__content_a.push(`${key}=${env[key]}`)
 	}
 	const dotenv__content = dotenv__content_a.join('\n')
-	const tempfile = await tempfile_()
+	const tempfile = await tempfile_path_()
 	await writeFile(tempfile, dotenv__content)
 	// language=sh
 	await ssh(ssh_url_(ctx))`scp ${tempfile} ${ssh_url_(ctx)}:~/sshd_config`
