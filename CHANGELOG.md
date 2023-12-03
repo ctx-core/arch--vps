@@ -1,5 +1,15 @@
 # @ctx-core/arch--vps
 
+## 0.6.2
+
+### Patch Changes
+
+- write to tempfile & scp:
+
+      bashrc__upload
+      dotenv__upload
+      sshd_config__upload
+
 ## 0.6.1
 
 ### Patch Changes

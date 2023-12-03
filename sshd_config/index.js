@@ -1,7 +1,8 @@
+import { tempfile_ } from '@ctx-core/tempfile'
 import { be_ } from 'ctx-core/be'
 import { run } from 'ctx-core/function'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
-import { readFile } from 'fs/promises'
+import { readFile, writeFile } from 'fs/promises'
 import { dirname } from 'path'
 import { ssh } from 'zx'
 import { ssh_url_ } from '../ssh_url/index.js'
@@ -17,11 +18,9 @@ export const sshd_config__upload = be_(ctx=>run(async ()=>{
 		sshd_config__content_(ctx)
 		?? await readFile(`${dir}/../fs/etc/ssh/sshd_config`).then(buf=>buf.toString())
 	if (typeof sshd_config__content === 'string') {
+		const tempfile = await tempfile_()
+		await writeFile(tempfile, sshd_config__content)
 		// language=sh
-		await ssh(ssh_url_(ctx))`
-			sudo cat<<-EOF > /etc/ssh/sshd_config
-${sshd_config__content}
-			EOF
-		`
+		await ssh(ssh_url_(ctx))`scp ${tempfile} ${ssh_url_(ctx)}:~/sshd_config`
 	}
 }))
