@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.3.4
+
+### Patch Changes
+
+- openssh\_\_install: fix: --noconfirm
+
 ## 0.3.3
 
 ### Patch Changes
