@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.3.1
+
+### Patch Changes
+
+- pacman\_\_rm_lck: fix: sudo
+
 ## 0.3.0
 
 ### Minor Changes
