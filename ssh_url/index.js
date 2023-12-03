@@ -5,4 +5,4 @@ export const [
 	ssh_url$_,
 	ssh_url_,
 ] = be_memo_pair_(ctx=>
-	`${ssh_user_(ctx)}:${ssh_host_(ctx)}`)
+	`${ssh_user_(ctx)}@${ssh_host_(ctx)}`)

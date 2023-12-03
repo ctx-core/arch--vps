@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.2.2
+
+### Patch Changes
+
+- ssh_url: fix: user@host
+
 ## 0.2.1
 
 ### Patch Changes
