@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.10.2
+
+### Patch Changes
+
+- bun\_\_install: remove console.debug
+
 ## 0.10.1
 
 ### Patch Changes
