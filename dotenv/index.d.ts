@@ -5,4 +5,4 @@ export declare const [
 	dotenv_,
 	dotenv__set
 ]:be_sig_triple_T<object>
-export declare const dotenv__scp:Be<Promise<void>>
+export declare const dotenv__upload:Be<Promise<void>>

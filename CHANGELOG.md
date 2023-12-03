@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.6.0
+
+### Minor Changes
+
+- dotenv**scp→dotenv**upload
+
 ## 0.5.0
 
 ### Minor Changes

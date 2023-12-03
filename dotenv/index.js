@@ -12,7 +12,7 @@ export const [
 	dotenv_,
 	dotenv__set
 ] = be_sig_triple_(()=>({}))
-export const dotenv__scp = be_(ctx=>run(async ()=>{
+export const dotenv__upload = be_(ctx=>run(async ()=>{
 	console.log('dotenv__scp')
 	const env = dotenv_(ctx)
 	env.NODE_ENV = 'development'
