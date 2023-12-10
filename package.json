@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/arch-vps",
-	"version": "0.11.26",
+	"version": "0.11.27",
 	"description": "arch linux based vps configuration & deployment functions",
 	"keywords": [
 		"ctx-core",
@@ -71,8 +71,8 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/fs": "^1.4.18",
-		"@ctx-core/tempfile": "^1.2.18",
+		"@ctx-core/fs": "^1.4.19",
+		"@ctx-core/tempfile": "^1.2.19",
 		"ctx-core": "^4.11.4",
 		"import-meta-resolve": "^4.0.0",
 		"zx": "^7.2.3"
