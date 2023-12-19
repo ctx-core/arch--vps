@@ -1,5 +1,13 @@
 # @ctx-core/arch--vps
 
+## 0.11.60
+
+### Patch Changes
+
+- tsx: ^4.6.2 -> ^4.7.0
+- Updated dependencies
+  - @ctx-core/fs@1.4.41
+
 ## 0.11.59
 
 ### Patch Changes
