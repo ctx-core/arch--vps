@@ -1,5 +1,13 @@
 # @ctx-core/arch--vps
 
+## 0.11.55
+
+### Patch Changes
+
+- ctx-core: ^5.0.0 -> ^5.0.1
+- Updated dependencies
+  - @ctx-core/tempfile@1.2.37
+
 ## 0.11.54
 
 ### Patch Changes
