@@ -1,5 +1,5 @@
-import { file_exists__waitfor } from '@ctx-core/fs'
 import { be_ } from 'ctx-core/be'
+import { file_exists__waitfor } from 'ctx-core/fs'
 import { run } from 'ctx-core/function'
 import { be_memo_pair_, be_memosig_triple_ } from 'ctx-core/rmemo'
 import { tempfile_path_ } from 'ctx-core/tempfile'
