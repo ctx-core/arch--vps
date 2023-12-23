@@ -1,4 +1,4 @@
-import type { Be } from 'be'
+import type { Be } from 'ctx-core/be'
 import type { be_sig_triple_T } from 'ctx-core/rmemo'
 export declare const [
 	dotenv$_,

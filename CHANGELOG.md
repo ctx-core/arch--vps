@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.11.69
+
+### Patch Changes
+
+- fix: type errors
+
 ## 0.11.68
 
 ### Patch Changes
