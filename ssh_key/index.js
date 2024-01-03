@@ -1,6 +1,6 @@
 import { be_ } from 'ctx-core/be'
-import { run } from 'ctx-core/function'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
+import { run } from 'ctx-core/run'
 import { ssh } from 'zx'
 import { openssh__install } from '../openssh/index.js'
 import { run_id_ } from '../run_id/index.js'

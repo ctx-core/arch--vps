@@ -1,6 +1,6 @@
 import { be_ } from 'ctx-core/be'
-import { run } from 'ctx-core/function'
 import { be_sig_triple_ } from 'ctx-core/rmemo'
+import { run } from 'ctx-core/run'
 import { ssh } from 'zx'
 import { app_name_ } from '../app/index.js'
 import { bashrc__upload } from '../bashrc/index.js'

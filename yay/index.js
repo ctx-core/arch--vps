@@ -1,5 +1,5 @@
 import { be_ } from 'ctx-core/be'
-import { run } from 'ctx-core/function'
+import { run } from 'ctx-core/run'
 import { ssh } from 'zx'
 import { base_devel__install } from '../base_devel/index.js'
 import { ssh_url_ } from '../ssh_url/index.js'

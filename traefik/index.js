@@ -1,7 +1,7 @@
 import { be_ } from 'ctx-core/be'
 import { file_exists__waitfor } from 'ctx-core/fs'
-import { run } from 'ctx-core/function'
 import { be_memo_pair_, be_memosig_triple_ } from 'ctx-core/rmemo'
+import { run } from 'ctx-core/run'
 import { tempfile_path_ } from 'ctx-core/tempfile'
 import { unlink, writeFile } from 'fs/promises'
 import { $, ssh } from 'zx'

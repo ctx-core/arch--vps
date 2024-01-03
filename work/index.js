@@ -1,6 +1,6 @@
 import { be_ } from 'ctx-core/be'
-import { run } from 'ctx-core/function'
 import { be_memo_pair_ } from 'ctx-core/rmemo'
+import { run } from 'ctx-core/run'
 import { ssh } from 'zx'
 import { ssh_url_ } from '../ssh_url/index.js'
 import { ssh_user_ } from '../ssh_user/index.js'

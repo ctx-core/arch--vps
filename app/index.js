@@ -1,6 +1,6 @@
 import { be_ } from 'ctx-core/be'
-import { run } from 'ctx-core/function'
 import { be_memo_pair_, be_sig_triple_ } from 'ctx-core/rmemo'
+import { run } from 'ctx-core/run'
 import { ssh } from 'zx'
 import { direnv__install } from '../direnv/index.js'
 import { ssh_url_ } from '../ssh_url/index.js'
