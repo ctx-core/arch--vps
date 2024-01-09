@@ -7,8 +7,9 @@ import { unlink, writeFile } from 'fs/promises'
 import { $, ssh } from 'zx'
 import { acme__email_ } from '../acme/index.js'
 import { ssh_url_ } from '../ssh_url/index.js'
-const [, traefik_yml_pair_] = be_memo_pair_((ctx, traefik_yml_a$)=>[
-	`
+const [, traefik_yml_pair_] = be_memo_pair_(
+	(ctx, traefik_yml_a$)=>[
+		`
 api:
   insecure: false
 
@@ -48,8 +49,8 @@ certificatesResolvers:
       httpChallenge:
         entryPoint: http
 		`.trim(),
-	traefik_yml_a$.val?.[0]
-])
+		traefik_yml_a$.val?.[0]
+	])
 export const [
 	traefik_yml$_,
 	traefik_yml_,

@@ -9,11 +9,13 @@ export const [
 	app_name$_,
 	app_name_,
 	app_name__set,
-] = be_sig_triple_(()=>'app')
+] = be_sig_triple_(
+	()=>'app')
 export const [
 	app_path$_,
 	app_path_,
-] = be_memo_pair_(ctx=>`${work_path_(ctx)}/${app_name_(ctx)}`)
+] = be_memo_pair_(
+	ctx=>`${work_path_(ctx)}/${app_name_(ctx)}`)
 export const app__direnv_allow = be_(ctx=>run(async ()=>{
 	console.log('app__direnv_allow')
 	await direnv__install(ctx)

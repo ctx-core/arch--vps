@@ -7,9 +7,12 @@ import { ssh_user_ } from '../ssh_user/index.js'
 export const [
 	work_path$_,
 	work_path_,
-] = be_memo_pair_(ctx=>`/home/${ssh_user_(ctx)}/work`)
-export const work__mkdir = be_(ctx=>run(async ()=>{
-	console.log('work__mkdir')
-	// language=sh
-	await ssh(ssh_url_(ctx))`mkdir -p ${work_path_(ctx)}`
-}))
+] = be_memo_pair_(
+	ctx=>`/home/${ssh_user_(ctx)}/work`)
+export const work__mkdir = be_(
+	ctx=>
+		run(async ()=>{
+			console.log('work__mkdir')
+			// language=sh
+			await ssh(ssh_url_(ctx))`mkdir -p ${work_path_(ctx)}`
+		}))
