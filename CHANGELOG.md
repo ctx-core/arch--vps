@@ -1,5 +1,13 @@
 # @ctx-core/arch--vps
 
+## 0.11.96
+
+### Patch Changes
+
+- import nodejs core modules using node: prefix
+- Updated dependencies
+  - ctx-core@5.18.8
+
 ## 0.11.95
 
 ### Patch Changes
