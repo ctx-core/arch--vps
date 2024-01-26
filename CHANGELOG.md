@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.11.123
+
+### Patch Changes
+
+- @types/node: 20.11.6 -> 20.11.7
+
 ## 0.11.122
 
 ### Patch Changes
