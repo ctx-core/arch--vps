@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.11.130
+
+### Patch Changes
+
+- ctx-core: ^5.33.0 -> ^5.34.0
+
 ## 0.11.129
 
 ### Patch Changes
