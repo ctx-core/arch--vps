@@ -1,5 +1,13 @@
 # @ctx-core/arch--vps
 
+## 0.11.162
+
+### Patch Changes
+
+- @types/node: 20.11.22 -> 20.11.24
+- Updated dependencies
+  - ctx-core@6.5.2
+
 ## 0.11.161
 
 ### Patch Changes
