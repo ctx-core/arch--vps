@@ -1,5 +1,13 @@
 # @ctx-core/arch--vps
 
+## 0.11.172
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+
 ## 0.11.171
 
 ### Patch Changes
