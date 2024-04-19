@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.11.191
+
+### Patch Changes
+
+- zx: ^8.0.1 -> ^8.0.2
+
 ## 0.11.190
 
 ### Patch Changes
