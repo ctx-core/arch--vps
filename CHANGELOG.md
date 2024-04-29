@@ -1,5 +1,11 @@
 # @ctx-core/arch--vps
 
+## 0.11.195
+
+### Patch Changes
+
+- import-meta-resolve: ^4.0.0 -> ^4.1.0
+
 ## 0.11.194
 
 ### Patch Changes
