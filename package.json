@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/arch-vps",
-	"version": "0.11.211",
+	"version": "0.11.212",
 	"description": "arch linux based vps configuration & deployment functions",
 	"keywords": [
 		"ctx-core",
@@ -76,7 +76,7 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^7.2.17",
+		"ctx-core": "^7.2.18",
 		"import-meta-resolve": "^4.1.0",
 		"zx": "^8.1.2"
 	},
@@ -84,7 +84,7 @@
 		"@types/node": "20.14.2",
 		"c8": "^9.1.0",
 		"check-dts": "^0.8.0",
-		"tsx": "^4.14.1",
+		"tsx": "^4.15.1",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},
